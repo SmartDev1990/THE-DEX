@@ -1,0 +1,23 @@
+{
+  "short_name": "DFH Finance",
+  "name": "DFH Finance",
+  "description": "DFH Finance",
+  "homepage_url": "https://dfh.finance",
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#222222",
+  "background_color": "#222222",
+  "orientation": "portrait",
+  "icons": [
+    {
+      "src": "favicon.ico",
+      "type": "image/x-icon",
+      "sizes": "256x256"
+    },
+    {
+      "src": "logo.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ]
+}
