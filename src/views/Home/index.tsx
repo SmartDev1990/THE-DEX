@@ -30,7 +30,7 @@ const HomePageContent = styled.div`
 const TypographySection = styled.div`
   order: 1;
   margin-top: 16px;
-  color: #d8c172;
+  color: #4afffc;
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -49,7 +49,7 @@ const TypographySection = styled.div`
   }
   > p {
     font-size: 18px;
-    color: #d8c172;
+    color: #4ac6ff;
     font-weight: 400;
     margin-top: 8px;
     max-width: 35ch;
@@ -82,10 +82,11 @@ const ButtonGrouping = styled.div`
 `
 
 const StyledButton = styled(Button)`
-  padding: 0;
+  padding: 4px;
   width: 130px;
   ${({ theme }) => theme.mediaQueries.sm} {
     width: 160px;
+    background-color: #4ac6ff;
   }
 `
 
@@ -94,6 +95,7 @@ const StyledConnectWalletButton = styled(ConnectWalletButton)`
   width: 130px;
   ${({ theme }) => theme.mediaQueries.sm} {
     width: 160px;
+    background-color: #4ac6ff;
   }
 `
 
@@ -147,7 +149,7 @@ const Home: React.FC = () => {
       <HomePageContent>
         <TypographySection>
           <h1>{t('MOUSHY SWAP')}</h1>
-          <p>{t('The digitization and sharing platform for investment in the real estate industry')}</p>
+          <p>{t('The DeFi and NFT platform')}</p>
           <ButtonGrouping>
             {!account && <StyledConnectWalletButton variant="primary">{t('Connect Wallet')}</StyledConnectWalletButton>}
             {account && (
