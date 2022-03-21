@@ -46,7 +46,7 @@ const config: (t: ContextApi['t']) => ConfigMenuItemsType[] = (t) => [
   },
   {
     label: t('Launchpad'),
-    icon: 'IFO',
+    icon: 'Ifo',
     href: '#',
     showItemsOnMobile: false,
     items: [
