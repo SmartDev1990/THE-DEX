@@ -15,12 +15,10 @@ const HomePageContent = styled.div`
   height: calc(100vh - 56px - 66px);
   display: flex;
   flex-direction: column;
-  align-items: left;
-
+  align-items: center;
   ${({ theme }) => theme.mediaQueries.sm} {
     height: calc(100vh - 56px);
   }
-
   ${({ theme }) => theme.mediaQueries.xl} {
     flex-direction: row;
     left: unset;
@@ -32,43 +30,36 @@ const HomePageContent = styled.div`
 const TypographySection = styled.div`
   order: 1;
   margin-top: 16px;
-  color: #08fffb;
+  color: #d8c172;
   text-align: center;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   max-width: 600px;
-
   > h1 {
     font-size: 24px;
     font-weight: 700;
-
     ${({ theme }) => theme.mediaQueries.xs} {
       font-size: 28px;
     }
-
     ${({ theme }) => theme.mediaQueries.sm} {
       font-size: 36px;
     }
   }
-
   > p {
     font-size: 18px;
-    color: #fbff08;
+    color: #d8c172;
     font-weight: 400;
     margin-top: 8px;
     max-width: 35ch;
-
     ${({ theme }) => theme.mediaQueries.xs} {
       font-size: 20px;
     }
-
     ${({ theme }) => theme.mediaQueries.sm} {
       font-size: 28px;
     }
   }
-
   ${({ theme }) => theme.mediaQueries.xl} {
     order: 0;
   }
@@ -79,15 +70,12 @@ const ButtonGrouping = styled.div`
   justify-content: center;
   width: calc(100vw - 32px);
   margin-top: 8px;
-
   > * + * {
     margin-left: 8px;
   }
-
   ${({ theme }) => theme.mediaQueries.xs} {
     margin-top: 16px;
   }
-
   ${({ theme }) => theme.mediaQueries.sm} {
     margin-top: 32px;
   }
@@ -96,7 +84,6 @@ const ButtonGrouping = styled.div`
 const StyledButton = styled(Button)`
   padding: 0;
   width: 130px;
-
   ${({ theme }) => theme.mediaQueries.sm} {
     width: 160px;
   }
@@ -105,7 +92,6 @@ const StyledButton = styled(Button)`
 const StyledConnectWalletButton = styled(ConnectWalletButton)`
   padding: 0;
   width: 130px;
-
   ${({ theme }) => theme.mediaQueries.sm} {
     width: 160px;
   }
@@ -119,7 +105,6 @@ const HomeAssetSection = styled.div`
   width: 35vh;
   height: 55%;
   animation: fadein 2.5s;
-
   @keyframes fadein {
     0% {
       margin-top: -2000px;
@@ -134,23 +119,18 @@ const HomeAssetSection = styled.div`
       margin-top: 0;
     }
   }
-
   ${({ theme }) => theme.mediaQueries.sm} {
     width: 45vh;
     height: 70%;
   }
-
   ${({ theme }) => theme.mediaQueries.md} {
   }
-
   ${({ theme }) => theme.mediaQueries.lg} {
   }
-
   ${({ theme }) => theme.mediaQueries.xl} {
     width: 50vh;
     height: 100%;
   }
-
   ${({ theme }) => theme.mediaQueries.xxl} {
     width: 60vh;
   }
